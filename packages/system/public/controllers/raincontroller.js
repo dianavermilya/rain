@@ -5,15 +5,13 @@ angular.module('mean.system').controller('RainController', ['$scope', '$rootScop
     $scope.results = null;
     rainService.query({}, function(results) {
       var grid = 'grid';
+      var water = 'water';
 
       $scope.grid = results[0][grid];
-
- 
-
+      $scope.water = results[0][water];
 
 
       $scope.results = results;
-      console.log('results2', results[0].oldGrid);
     });
   }
 ]);

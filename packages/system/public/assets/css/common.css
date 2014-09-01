@@ -121,3 +121,9 @@ footer p {
 	font-weight: lighter;
 	margin-bottom: 5px;
 }
+.rain-body .total-water {
+	float: left;
+	margin-top: 20px;
+	font-weight: bold;
+
+}

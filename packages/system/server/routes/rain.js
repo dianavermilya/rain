@@ -83,11 +83,9 @@ module.exports = function(System, app, auth, database) {
         }
       }
    
-
-
       var items = [{
         grid: gridJSON,
-        water: water,
+        water: water
       }];
 
       res.json(items);
