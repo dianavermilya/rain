@@ -48,3 +48,76 @@ footer p {
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+
+.rain-body {
+	display: block;
+}
+
+.rain-body .grid {
+	display: block;
+	float: left;
+	margin-right: 50px;
+}
+
+.grid-row {
+	width: 100%;
+	height: 40px;
+}
+
+.grid-block {
+	height: 40px;
+	width: 40px;
+	float: left;
+	font-size: 20px;
+	padding-left: 13px;
+	padding-top: 7px;
+}
+
+.grid-row .color-0 {
+	background-color: rgb(167, 56, 62);	
+}
+.grid-row .color-1 {
+	background-color: rgb(196, 77, 64);
+}
+.grid-row .color-2 {
+	background-color: rgb(196, 96, 64);
+}
+.grid-row .color-3 {
+	background-color: rgb(196, 112, 64);
+}
+.grid-row .color-4 {
+	background-color: rgb(196, 134, 64);
+}
+.grid-row .color-5 {
+	background-color: rgb(196, 147, 64);
+}
+.grid-row .color-6 {
+	background-color: rgb(196, 160, 64);
+}
+.grid-row .color-7 {
+	background-color: rgb(206, 176, 55);
+}
+.grid-row .color-8 {
+	background-color: rgb(206, 192, 55);
+}
+.grid-row .color-9 {
+	background-color: rgb(201, 205, 55);
+}
+.grid-row .water {
+	background-color: rgb(36, 113, 127) !important;
+}
+.grid-label {
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.rain-body .title {
+	font-size: 30px;
+
+}
+.rain-body .explanation {
+	margin-bottom: 20px;
+}
+.rain-body .author {
+	font-weight: lighter;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,27 @@
+<div class="rain-body" ng-controller = "RainController" data-toggle="dropdown">
+	<div class="title">
+		Rain Collected by a 3D Object
+	</div>
+	<div class="explanation">
+		Imagine an object, similar to a chessboard, but all the squares are at different elevations.  Imagine an infinite amount of rain falls on the board.  Assuming rain cannot seep diagonally, how much rain water is trapped afterwards?
+	</div>
+	<div class="explanation">
+		In the graphs below, the numbers on blocks represent their elevations.  A block labeled 5 is 3 units taller than a block labeled 2.  Color mirrors elevation.  Taller blocks are more yellow, while shorter ones are more red.  In the second graph, the blue blocks represent ones with water on top of them.  Their elevation value includes the height of the water.
+	</div>
+	<div class="grid">
+		<div class="grid-label">Before the rain</div>
+		<div class="grid-row" ng-repeat="row in grid">
+			<div class="grid-block color-{{block.oldElv}}" ng-repeat="block in row">
+				{{block.oldElv}}
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="grid-label">After the rain</div>
+		<div class="grid-row" ng-repeat="row in grid">
+			<div class="grid-block color-{{block.newElv}} {{block.water}}" ng-repeat="block in row">
+				{{block.newElv}}
+			</div>
+		</div>
+	</div>
+</div>

@@ -19,6 +19,7 @@ module.exports = function(System, app, auth, database) {
           return JSON.parse(item);
         })
       });
+      console.log(items);
 
       res.json(items);
     });
